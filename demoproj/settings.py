@@ -80,7 +80,7 @@ DATABASES = {
         'HOST': 'ep-sweet-poetry-a1856cch.ap-southeast-1.aws.neon.tech',  # Host
         'PORT': '5432',  # Port
         'OPTIONS': {
-            'sslmode': 'require',  # Ensures SSL mode is enabled
+            'sslmode': 'require',  # SSL mode required
         },
     }
 }
