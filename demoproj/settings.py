@@ -73,14 +73,18 @@ WSGI_APPLICATION = 'demoproj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':  'demodatabse',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST':  '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'verceldb',  # Database name
+        'USER': 'default',  # Username
+        'PASSWORD': '39thRdViquDc',  # Password
+        'HOST': 'ep-sweet-poetry-a1856cch.ap-southeast-1.aws.neon.tech',  # Host
+        'PORT': '5432',  # Port
+        'OPTIONS': {
+            'sslmode': 'require',  # Ensures SSL mode is enabled
+        },
     }
 }
+
 
 
 
